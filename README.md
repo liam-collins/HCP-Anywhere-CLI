@@ -16,3 +16,36 @@ rewrite it properly...
 	2. Delete a file
 	3. Delete a directory (including its contents)
 
+
+How to use:
+===========
+
+The code runs from the "testRigPy2.py":
+
+liam$ ~/Projects/HCP-CLI$ ./testRigPy2.py --help
+Usage: testRigPy2.py -u <user> -p <password> -x <hcp URL>
+
+Options:
+  -h, --help            show this help message and exit
+  -u USERNAME, --user=USERNAME
+                        Username
+  -p PASSWORD, --password=PASSWORD
+                        Password
+  -s URL, --url=URL     URL server name
+  -c COMMAND, --command=COMMAND
+                        Command (ls/upload/download/delete)
+  -f FILENAME, --filename=FILENAME
+                        Source filename (upload/download)
+  -d DIRECTORY, --dir=DIRECTORY
+                        Driectory
+  -t TO, --to=TO        Destination filename
+
+
+The commands are:
+
+    'upload'    : Upload a file ("-f") to the directory "-d" or "/" position. 
+    'download'  : **Doesn't work 
+    'rm'        : **Doesn't work 
+    'rmdir'     : **Doesn't work 
+    'mkdir'     : Make a driectory from the location pointed to by "-d" or "/"
+    'ls'        : List a given directory from the location pointed to by "-d" or "/" 
